@@ -1,0 +1,61 @@
+.navigation {
+    background-color: #f5eaf3;
+    line-height: 1.5;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 20px;
+    -webkit-box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
+    -moz-box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
+    box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
+}
+
+.list {
+    list-style-type: disc;
+    padding: 5px;
+    margin: 0 0 0 36px;
+}
+
+.list__border {
+    display: inline-block;
+    list-style-type: none;
+    background-color: #bfebe2;
+    margin: 30px 500px 30px 30px;
+    padding: 30px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
+    -moz-box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
+    box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
+}
+
+.aside {
+    display: inline-block;
+    background-color: #bfebe2;
+    margin: 30px 30px 30px 400px;
+    padding: 15px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
+    -moz-box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
+    box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
+}
+
+.link {
+    color: #b70505;
+    background-color: #9ae1d3;
+    padding: 5px 10px;
+}
+
+link:visited {
+    background-color: brown;
+}
+
+.link:hover {
+    background-color: green;
+    color: white;
+    border-bottom: 1px solid;
+    outline: none;
+}
+
+.link:active {
+    background-color: #8480c8;
+
+}
