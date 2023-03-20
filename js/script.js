@@ -1,18 +1,18 @@
 console.log("Cześć!");
 
 let heading = document.querySelector(".heading");
-let button__title = document.querySelector(".button__title");
+let headerColorButton = document.querySelector(".js-toggleHeaderColorButton");
 
-button__title.addEventListener("click", () => {
+headerColorButton.addEventListener("click", () => {
     heading.classList.toggle("color")
 });
 
-let button__body = document.querySelector(".button__body");
+let themeColorButton = document.querySelector(".js-toggleThemeColorButton");
 let body = document.querySelector(".body");
-let color__name = document.querySelector(".color__name");
+let themeName = document.querySelector(".js-themeName");
 
-button__body.addEventListener("click", () => {
-    body.classList.toggle("dark");
+themeColorButton.addEventListener("click", () => {
+    body.classList.toggle("body--darkTheme");
 
-    color__name.innerText = body.classList.contains("dark") ? "Jasny" : "Ciemny";
+    themeName.innerText = body.classList.contains("body--darkTheme") ? "Jasny" : "Ciemny";
 });

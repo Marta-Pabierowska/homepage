@@ -1,0 +1,22 @@
+.footer {
+    background-color: #e0f1ed;
+    line-height: 1.5;
+    text-align: center;
+    padding: 15px 30px 15px 30px;
+    margin: 30px;
+    border-radius: 20px;
+    -webkit-box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
+    -moz-box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
+    box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
+}
+
+.footer__item {
+    display: inline-block;
+    background-color: #bfebe2;
+    padding: 15px;
+    margin: 0 25px 25px 25px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
+    -moz-box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
+    box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
+}

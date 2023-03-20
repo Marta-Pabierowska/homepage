@@ -1,0 +1,29 @@
+.main {
+    line-height: 1.5;
+    text-align: center;
+}
+
+.section {
+    line-height: 1.5;
+}
+
+.article {
+    background-color: #bfebe2;
+    line-height: 1.5;
+    padding: 30px;
+    margin: 30px;
+    border-color: antiquewhite;
+    border-radius: 20px;
+    -webkit-box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
+    -moz-box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
+    box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
+}
+
+.name {
+    background-color: #f5f5e7;
+    color: #b70505;
+}
+
+.surname {
+    color: #ff0000e0;
+}

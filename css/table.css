@@ -6,18 +6,18 @@
     width: 100%;
 }
 
-.table__header {
+.table__cell {
+    border: 1px solid #f5f2f2;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.table__cell--header {
     border: 1px solid #ccc;
     border-collapse: collapse;
     padding: 10px;
     color: #b70505;
     background-color: #e8dee4;
-}
-
-.table__cell {
-    border: 1px solid #f5f2f2;
-    border-collapse: collapse;
-    padding: 10px;
 }
 
 .table__row:hover {

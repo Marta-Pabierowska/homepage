@@ -10,9 +10,11 @@
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/table.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
     <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,26 +26,26 @@
     <header class="header">
         <h1 class="heading"><span class="title">MOJE KAWIE DOMOWE</span></h1>
         <p class="button">
-            <button class="button__title">Zmień kolor nagłówka</button>
-            <button class="button__body"><span class="color__name">Jasny</span> motyw strony</button>
+            <button class="js-toggleHeaderColorButton">Zmień kolor nagłówka</button>
+            <button class="js-toggleThemeColorButton"><span class="js-themeName">Jasny</span> motyw strony</button>
         </p>
     </header>
     <nav class="navigation">
-        <h2 class="list__border" id="spisTresci">Spis treści</h2>
-        <ul class="list__border">
+        <h2 class="navigation__title" id="spis-tresci">Spis treści</h2>
+        <ul class="navigation__list">
             <li><a href=#informacje>Informscje ogólne</a></li>
-            <li class="list"><a href=#poczatki>Początki</a></li>
-            <li class="list"><a href=#plec>Płeć</a></li>
-            <li class="list"><a href=#miesieczne-zapotrzebowanie>Miesięczne zapotrzebowanie</a></li>
-            <li class="list"><a href=#dieta>Dieta</a></li>
+            <li class="navigation__item"><a href=#poczatki>Początki</a></li>
+            <li class="navigation__item"><a href=#plec>Płeć</a></li>
+            <li class="navigation__item"><a href=#miesieczne-zapotrzebowanie>Miesięczne zapotrzebowanie</a></li>
+            <li class="navigation__item"><a href=#dieta>Dieta</a></li>
             <li><a href=#stado1>Stado 1</a></li>
-            <li class="list"><a href=#pusia>Pusia</a></li>
-            <li class="list"><a href=#lusia>Lusia</a></li>
-            <li class="list"><a href=#lola>Lola</a></li>
-            <li class="list"><a href=#candy>Candy</a></li>
+            <li class="navigation__item"><a href=#pusia>Pusia</a></li>
+            <li class="navigation__item"><a href=#lusia>Lusia</a></li>
+            <li class="navigation__item"><a href=#lola>Lola</a></li>
+            <li class="navigation__item"><a href=#candy>Candy</a></li>
             <li><a href=#stado2>Stado 2</a></li>
-            <li class="list"><a href=#magic>Magic Lucky</a></li>
-            <li class="list"><a href=#orik>Orik</a></li>
+            <li class="navigation__item"><a href=#magic>Magic Lucky</a></li>
+            <li class="navigation__item"><a href=#orik>Orik</a></li>
             <li><a href=#zakonczenie>Zakończenie</a></li>
         </ul>
         <aside class="aside">
@@ -81,25 +83,25 @@
                 <h3 id="plec">Płeć</h3>
                 <table class="table">
                     <tr class="table__row">
-                        <th class="table__header" scope="col">Stado 1</th>
+                        <th class="table__cell table__cell--header" scope="col">Stado 1</th>
                         <td class="table__cell">płeć</td>
-                        <th class="table__header" scope="col">Stado 2</th>
+                        <th class="table__cell table__cell--header" scope="col">Stado 2</th>
                         <td class="table__cell">płeć</td>
                     </tr>
                     <tr class="table__row">
-                        <th class="table__header" scope="col">Lusia</th>
+                        <th class="table__cell table__cell--header" scope="col">Lusia</th>
                         <td class="table__cell">samiczka</td>
-                        <th class="table__header" scope="col">Magic Lucky</th>
+                        <th class="table__cell table__cell--header" scope="col">Magic Lucky</th>
                         <td class="table__cell">samiczka</td>
                     </tr>
                     <tr class="table__row">
-                        <th class="table__header" scope="col">Lola</th>
+                        <th class="table__cell table__cell--header" scope="col">Lola</th>
                         <td class="table__cell">samiczka</td>
-                        <th class="table__header" scope="col" rowspan="2">Orik</th>
+                        <th class="table__cell table__cell--header" scope="col" rowspan="2">Orik</th>
                         <td class="table__cell" rowspan="2">samiec</td>
                     </tr>
                     <tr class="table__row">
-                        <th class="table__header" scope="col">Candy</th>
+                        <th class="table__cell table__cell--header" scope="col">Candy</th>
                         <td class="table__cell">samiczka</td>
                     </tr>
                 </table>
@@ -108,55 +110,55 @@
                 <h3 id="miesieczne-zapotrzebowanie">Miesięczne zapotrzebowanie</h3>
                 <table class="table">
                     <tr class="table__row">
-                        <th class="table__header" scope="col">Materiały</th>
-                        <th class="table__header" scope="col">ilość na miesiąc</th>
-                        <th class="table__header" scope="col">cena zł</th>
+                        <th class="table__cell table__cell--header" scope="col">Materiały</th>
+                        <th class="table__cell table__cell--header" scope="col">ilość na miesiąc</th>
+                        <th class="table__cell table__cell--header" scope="col">cena zł</th>
                     </tr>
                     <tr class="table__row">
-                        <th class="table__header">pelet</th>
+                        <th class="table__cell table__cell--header">pelet</th>
                         <td class="table__cell">60 kg</td>
                         <td class="table__cell">160</td>
                     </tr>
                     <tr class="table__row">
-                        <th class="table__header">trociny</th>
+                        <th class="table__cell table__cell--header">trociny</th>
                         <td class="table__cell">250 litr.</td>
                         <td class="table__cell">80</td>
                     <tr class="table__row">
-                        <th class="table__header" scope="col">karma Cavia complite</th>
+                        <th class="table__cell table__cell--header" scope="col">karma Cavia complite</th>
                         <td class="table__cell">8 kg</td>
                         <td class="table__cell">130</td>
                     <tr class="table__row">
-                        <th class="table__header">siano</th>
+                        <th class="table__cell table__cell--header">siano</th>
                         <td class="table__cell">1 snopek</td>
                         <td class="table__cell">50</td>
                     </tr>
                     <tr class="table__row">
-                        <th class="table__header">groszek gnieciony</th>
+                        <th class="table__cell table__cell--header">groszek gnieciony</th>
                         <td class="table__cell">5 kg</td>
                         <td class="table__cell">20</td>
                     </tr>
                     <tr class="table__row">
-                        <th class="table__header">zioła</th>
+                        <th class="table__cell table__cell--header">zioła</th>
                         <td class="table__cell">30 lit.</td>
                         <td class="table__cell">100</td>
                     </tr>
                     <tr class="table__row">
-                        <th class="table__header">witamina C</th>
+                        <th class="table__cell table__cell--header">witamina C</th>
                         <td class="table__cell">80 g</td>
                         <td class="table__cell">30</td>
                     </tr>
                     <tr class="table__row">
-                        <th class="table__header">środki dezynfekcyjne</th>
+                        <th class="table__cell table__cell--header">środki dezynfekcyjne</th>
                         <td class="table__cell">1 lit.</td>
                         <td class="table__cell">20</td>
                     </tr>
                     <tr class="table__row">
-                        <th class="table__header">warzywa i owoce</th>
+                        <th class="table__cell table__cell--header">warzywa i owoce</th>
                         <td class="table__cell">10-20 kg</td>
                         <td class="table__cell">100</td>
                     </tr>
                     <tr class="table__row">
-                        <th class="table__header" colspan="2">suma</th>
+                        <th class="table__cell table__cell--header" colspan="2">suma</th>
                         <td class="table__cell">690</td>
                     </tr>
                 </table>
@@ -308,9 +310,9 @@
     <footer class="footer">
         <p>Dane kontaktowe:</p>
         <ul>
-            <li class="data"><a href="tel:+48.860840820">tel.: +48 860 840 820</a></li>
-            <li class="data"><a href="mailto:teeyanell@wp.pl">e-mail: teeyanell@wp.pl</a></li>
-            <li class="data"><a href=#spisTresci>Spis treści</a></li>
+            <li class="footer__item"><a href="tel:+48.860840820">tel.: +48 860 840 820</a></li>
+            <li class="footer__item"><a href="mailto:marta.cipher@gmail.com">e-mail: marta.cipher@gmail.com</a></li>
+            <li class="footer__item"><a href=#spis-tresci>Spis treści</a></li>
         </ul>
     </footer>
 </body>
