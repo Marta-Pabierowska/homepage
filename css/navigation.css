@@ -1,4 +1,7 @@
 .navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
     background-color: #e0f1ed;
     line-height: 1.5;
     padding: 30px;
@@ -11,10 +14,12 @@
 
 .navigation__title {
     display: inline-block;
+    max-width: 200px;
+    max-height: 150px;
     list-style-type: none;
     background-color: #bfebe2;
     color: #b70505;
-    margin: 30px 500px 30px 30px;
+    align-self: flex-start;
     padding: 30px;
     border-radius: 5px;
     -webkit-box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
@@ -26,7 +31,10 @@
     display: inline-block;
     list-style-type: none;
     background-color: #bfebe2;
-    margin: 30px 500px 30px 30px;
+    justify-content: flex-start;
+    align-self: flex-end;
+    flex-shrink: 2;
+    margin: 120px 0 0 0;
     padding: 30px;
     border-radius: 5px;
     -webkit-box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
@@ -41,10 +49,13 @@
 }
 
 .aside {
+    max-width: 300px;
     display: inline-block;
     background-color: #bfebe2;
-    margin: 30px 30px 30px 400px;
+    align-self: flex-end;
+    margin: 16px 0 0 0;
     padding: 15px;
+    line-height: 50px;
     border-radius: 5px;
     -webkit-box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
     -moz-box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
