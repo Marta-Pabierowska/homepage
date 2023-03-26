@@ -2,6 +2,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    align-items: flex-end;
     background-color: #e0f1ed;
     line-height: 1.5;
     padding: 30px;
@@ -13,13 +14,17 @@
 }
 
 .navigation__title {
-    display: inline-block;
     max-width: 200px;
     max-height: 150px;
     list-style-type: none;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
     background-color: #bfebe2;
     color: #b70505;
-    align-self: flex-start;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 20px;
     padding: 30px;
     border-radius: 5px;
     -webkit-box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
@@ -32,9 +37,7 @@
     list-style-type: none;
     background-color: #bfebe2;
     justify-content: flex-start;
-    align-self: flex-end;
     flex-shrink: 2;
-    margin: 120px 0 0 0;
     padding: 30px;
     border-radius: 5px;
     -webkit-box-shadow: 1px 0px 57px -4px rgba(36, 113, 103, 1);
@@ -52,8 +55,7 @@
     max-width: 300px;
     display: inline-block;
     background-color: #bfebe2;
-    align-self: flex-end;
-    margin: 16px 0 0 0;
+    align-self: center;
     padding: 15px;
     line-height: 50px;
     border-radius: 5px;
