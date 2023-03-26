@@ -1,18 +1,40 @@
-console.log("Cześć!");
+{
+    const welcome = () => {
+        console.log("WELCOME!");
+    }
 
-let heading = document.querySelector(".heading");
-let headerColorButton = document.querySelector(".js-toggleHeaderColorButton");
+    const toggleBackground = () => {
+        const body = document.querySelector(".body");
+        const themeName = document.querySelector(".js-themeName");
 
-headerColorButton.addEventListener("click", () => {
-    heading.classList.toggle("color")
-});
+        body.classList.toggle("body--darkTheme");
+        themeName.innerText = body.classList.contains("body--darkTheme") ? "Jasny" : "Ciemny";
+    };
 
-let themeColorButton = document.querySelector(".js-toggleThemeColorButton");
-let body = document.querySelector(".body");
-let themeName = document.querySelector(".js-themeName");
+    const init = () => {
+        const changeBackgroundButton = document.querySelector(".js-togglechangeBackgroundButton");
 
-themeColorButton.addEventListener("click", () => {
-    body.classList.toggle("body--darkTheme");
+        changeBackgroundButton.addEventListener("click", toggleBackground);
 
-    themeName.innerText = body.classList.contains("body--darkTheme") ? "Jasny" : "Ciemny";
-});
+        welcome();
+    };
+
+    init();
+}
+{
+    const toggleHeaderColor = () => {
+        const heading = document.querySelector(".heading");
+        const headingName = document.querySelector(".js-headingName");
+
+        heading.classList.toggle("header--color");
+        headingName.innerText = heading.classList.contains("header--color") ? "Czerwony" : "Zielony";
+    };
+
+    const other = () => {
+        const headerColorButton = document.querySelector(".js-toggleHeaderColorButton");
+
+        headerColorButton.addEventListener("click", toggleHeaderColor);
+    };
+
+    other();
+}
